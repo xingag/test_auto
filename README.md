@@ -8,4 +8,5 @@
 ## RESTful API
 
 * [SpringBoot 搭建 RESTful API](./restful_api/api_sprintboot)
+* [Flask 搭建 RESTful API](./restful_api/api_flask)
 
