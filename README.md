@@ -18,3 +18,8 @@
 * [Python 代码覆盖率工具-Coverage](./code_coverage/coverage_test)
 * [SpringBoot + Jacoco代码覆盖率](./code_coverage/springboot_jacoco_test)
 
+
+
+## 设计模式
+
+* [Python 面试中常见的设计模式](./Python设计模式)
