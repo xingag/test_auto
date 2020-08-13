@@ -23,3 +23,10 @@
 ## 设计模式
 
 * [Python 面试中常见的设计模式](./Python设计模式)
+
+
+
+## 群控
+
+* [群控 - ADB](./group_control/adb)
+

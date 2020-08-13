@@ -1,0 +1,18 @@
+# 包名和Activity
+package_name:  com.taobao.idlefish
+home_activity:  com.taobao.fleamarket.home.activity.InitActivity
+
+# 执行步骤
+steps:
+  - save_ui_tree_to_local:
+      method:  save_ui_tree_to_local
+      args:
+  - find_element_and_click:
+      id:  com.taobao.idlefish:id/tx_id
+  - save_ui_tree_to_local:
+      method:  save_ui_tree_to_local
+  - input_content:
+      content:  Python
+  - find_element_and_click:
+      id:  com.taobao.idlefish:id/search_button
+
