@@ -1,4 +1,11 @@
 # 自动化测试
+
+## App 自动化
+
+* [UiAutomator2 使用](./UiAutomator2)
+
+
+
 ## Web 自动化
 
 * [Helium 使用](./helium_demo)
