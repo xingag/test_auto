@@ -43,3 +43,9 @@
 
 * [群控 - ADB](./group_control/adb)
 
+
+
+## Python 基础
+
+* [Python 普通函数、静态方法、类方法区别](./Python类方法和静态方法)
+
