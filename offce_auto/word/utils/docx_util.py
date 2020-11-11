@@ -26,6 +26,8 @@ import os
 import re
 
 
+# 公众号：AirPython
+
 def get_image_data_from_network(url):
     """
     获取网络图片字节流
@@ -158,6 +160,144 @@ def create_style(document, style_name, style_type, font_size=-1, font_color=None
         font_style._element.rPr.rFonts.set(qn('w:eastAsia'), font_name)
 
     return font_style
+
+
+def get_page_margin(section):
+    """
+    获取某个页面的页边距(EMU)
+    :param section:
+    :return:
+    """
+    # 分别对应：左边距、上边距、右边距、下边距
+    left, top, right, bottom = section.left_margin, section.top_margin, section.right_margin, section.bottom_margin
+    return left, top, right, bottom
+
+def get_header_footer_distance(section):
+    """
+    获取页眉、页脚边距
+    :param section:
+    :return:
+    """
+    # 分别对应页眉边距、页脚边距
+    header_distance, footer_distance = section.header_distance, section.footer_distance
+    return header_distance, footer_distance
+
+def get_page_size(section):
+    """
+    获取页面宽度、高度
+    :param section:
+    :return:
+    """
+    # 分别对应页面宽度、高度
+    page_width, page_height = section.page_width, section.page_height
+    return page_width, page_height
+
+
+def get_page_orientation(section):
+    """
+    获取页面方向
+    :param section:
+    :return:
+    """
+    return section.orientation
+
+
+def get_runs(paragraph):
+    """
+    获取段落下所有的文字块信息，包含：数目、内容列表
+    :param paragraph:
+    :return:
+    """
+    # 段落对象包含的文字块Run
+    runs = paragraph.runs
+
+    # 数量
+    runs_length = len(runs)
+
+    # 文字块内容
+    runs_contents = [run.text for run in runs]
+
+    return runs, runs_length, runs_contents
+
+def get_table_cell_content(table):
+    """
+    读取表格中所有单元格是内容
+    :param table:
+    :return:
+    """
+    # 所有单元格
+    cells = table._cells
+    cell_size = len(cells)
+
+    # 所有单元格的内容
+    content = [cell.text for cell in cells]
+
+def get_table_size(table):
+    """
+    获取表格的行数量、列数量
+    :param table:
+    :return:
+    """
+    # 几行、几列
+    row_length, column_length = len(table.rows), len(table.columns)
+    return row_length, column_length
+
+def get_table_row_datas(table):
+    """
+    获取表格中行数据
+    :param table:
+    :return:
+    """
+    rows = table.rows
+    datas = []
+
+    # 每一行获取单元格的数据组成列表，加入到结果列表中
+    for row in rows:
+        datas.append([cell.text for cell in row.cells])
+    return datas
+
+
+def get_table_column_datas(table):
+    """
+    获取表格中列数据
+    :param table:
+    :return:
+    """
+    columns = table.columns
+    datas = []
+
+    # 每一列获取单元格的数据组成列表，加入到结果列表中
+    for column in columns:
+        datas.append([cell.text for cell in column.cells])
+    return datas
+
+
+def get_word_pics(doc, word_path, output_path):
+    """
+    提取word文档内的图片
+    :param word_path:源文件名称
+    :param output_path: 结果目录
+    :return:
+    """
+    dict_rel = doc.part._rels
+    for rel in dict_rel:
+        rel = dict_rel[rel]
+        if "image" in rel.target_ref:
+            # 图片保存目录
+            if not os.path.exists(output_path):
+                os.makedirs(output_path)
+            img_name = re.findall("/(.*)", rel.target_ref)[0]
+            word_name = os.path.splitext(word_path)[0]
+
+            # 新的名称
+            newname = word_name.split('\\')[-1] if os.sep in word_name else word_name.split('/')[-1]
+            img_name = f'{newname}_{img_name}'
+
+            # 写入到文件中
+            with open(f'{output_path}/{img_name}', "wb") as f:
+                f.write(rel.target_part.blob)
+
+
 
 
 
