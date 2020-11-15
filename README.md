@@ -54,5 +54,6 @@
 ## Python 办公自动化
 
 * [Excel 篇](./offce_auto/Excel)
-* [Word 篇](./offce_auto/word)
+* [Word 篇](./offce_auto/Word)
+* [PPT篇](./offce_auto/PPT)
 

@@ -13,20 +13,18 @@
 @description：工具类
 """
 
-from docx.shared import Inches
-from urllib.request import urlopen
-from io import BytesIO
-import ssl
-from docx.shared import Pt
-from docx.shared import RGBColor
-from docx.oxml.ns import qn
-from docx.enum.style import WD_STYLE_TYPE
-from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 import os
 import re
+import ssl
+from io import BytesIO
+from urllib.request import urlopen
 
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
+from docx.oxml.ns import qn
+from docx.shared import Inches
+from docx.shared import Pt
+from docx.shared import RGBColor
 
-# 公众号：AirPython
 
 def get_image_data_from_network(url):
     """
@@ -155,11 +153,38 @@ def create_style(document, style_name, style_type, font_size=-1, font_color=None
         # font_style.paragraph_format.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
 
     # 中文字体名称
+    # 比如：微软雅黑、宋体
     if font_name:
         font_style.font.name = font_name
         font_style._element.rPr.rFonts.set(qn('w:eastAsia'), font_name)
 
     return font_style
+
+
+def get_word_pics(doc, word_path, output_path):
+    """
+    提取word文档内的图片
+    :param word_path:源文件名称
+    :param output_path: 结果目录
+    :return:
+    """
+    dict_rel = doc.part._rels
+    for rel in dict_rel:
+        rel = dict_rel[rel]
+        if "image" in rel.target_ref:
+            # 图片保存目录
+            if not os.path.exists(output_path):
+                os.makedirs(output_path)
+            img_name = re.findall("/(.*)", rel.target_ref)[0]
+            word_name = os.path.splitext(word_path)[0]
+
+            # 新的名称
+            newname = word_name.split('\\')[-1] if os.sep in word_name else word_name.split('/')[-1]
+            img_name = f'{newname}_{img_name}'
+
+            # 写入到文件中
+            with open(f'{output_path}/{img_name}', "wb") as f:
+                f.write(rel.target_part.blob)
 
 
 def get_page_margin(section):
@@ -172,6 +197,7 @@ def get_page_margin(section):
     left, top, right, bottom = section.left_margin, section.top_margin, section.right_margin, section.bottom_margin
     return left, top, right, bottom
 
+
 def get_header_footer_distance(section):
     """
     获取页眉、页脚边距
@@ -181,6 +207,7 @@ def get_header_footer_distance(section):
     # 分别对应页眉边距、页脚边距
     header_distance, footer_distance = section.header_distance, section.footer_distance
     return header_distance, footer_distance
+
 
 def get_page_size(section):
     """
@@ -219,6 +246,7 @@ def get_runs(paragraph):
 
     return runs, runs_length, runs_contents
 
+
 def get_table_cell_content(table):
     """
     读取表格中所有单元格是内容
@@ -231,6 +259,8 @@ def get_table_cell_content(table):
 
     # 所有单元格的内容
     content = [cell.text for cell in cells]
+    return content
+
 
 def get_table_size(table):
     """
@@ -241,6 +271,7 @@ def get_table_size(table):
     # 几行、几列
     row_length, column_length = len(table.rows), len(table.columns)
     return row_length, column_length
+
 
 def get_table_row_datas(table):
     """
@@ -272,32 +303,48 @@ def get_table_column_datas(table):
     return datas
 
 
-def get_word_pics(doc, word_path, output_path):
+def add_norm_header_and_footer(header, footer, header_content, footer_content):
     """
-    提取word文档内的图片
-    :param word_path:源文件名称
-    :param output_path: 结果目录
+    增加一个普通的页眉、页脚，并居中显示
+    :param header_content:
+    :param footer_content:
     :return:
     """
-    dict_rel = doc.part._rels
-    for rel in dict_rel:
-        rel = dict_rel[rel]
-        if "image" in rel.target_ref:
-            # 图片保存目录
-            if not os.path.exists(output_path):
-                os.makedirs(output_path)
-            img_name = re.findall("/(.*)", rel.target_ref)[0]
-            word_name = os.path.splitext(word_path)[0]
+    # 新增/修改页眉、页脚
+    # 注意：一般页眉、页脚里只有一个段落
+    header.paragraphs[0].text = header_content
+    footer.paragraphs[0].text = footer_content
 
-            # 新的名称
-            newname = word_name.split('\\')[-1] if os.sep in word_name else word_name.split('/')[-1]
-            img_name = f'{newname}_{img_name}'
+    # 居中显示
+    header.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    footer.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
 
-            # 写入到文件中
-            with open(f'{output_path}/{img_name}', "wb") as f:
-                f.write(rel.target_part.blob)
+    # 靠右显示
+    # footer.paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
 
 
+def add_custom_style_header_and_footer(header, footer, header_content, footer_content, style):
+    """
+    新增自定义的页眉、页脚
+    :param header:
+    :param footer:
+    :param header_content:
+    :param footer_content:
+    :param style:
+    :return:
+    """
+    # 注意：style_type=2，否则会报错
+    header.paragraphs[0].add_run(header_content, style)
+    footer.paragraphs[0].add_run(footer_content, style)
 
 
-
+def remove_all_header_and_footer(doc):
+    """
+    删除文档中所有页眉和页脚
+    :param doc:
+    :return:
+    """
+    for section in doc.sections:
+        section.different_first_page_header_footer = False
+        section.header.is_linked_to_previous = True
+        section.footer.is_linked_to_previous = True
