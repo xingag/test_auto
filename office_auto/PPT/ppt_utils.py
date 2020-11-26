@@ -27,6 +27,8 @@ from pptx.shapes.picture import Movie
 from pptx.util import Inches, Cm
 from pptx.util import Pt
 from pptx.enum.text import MSO_VERTICAL_ANCHOR, MSO_ANCHOR
+from pptx.enum.shapes import MSO_SHAPE_TYPE
+
 
 
 def get_video_frame(clip, frame_index):
@@ -193,6 +195,30 @@ def insert_textbox(slide, left, top, width, height, unit=Inches):
 
     return textbox, tf
 
+
+def insert_shape(slide, left, top, width, height, autoshape_type_id=MSO_SHAPE.CHEVRON, unit=Inches):
+    """
+    幻灯片中添加形状
+    :param unit: 单位，默认为Inches
+    :param autoshape_type_id: 形状类型
+    :param slide:幻灯片
+    :param left:左边距
+    :param top:上边距
+    :param width:宽度
+    :param height:高度
+    :return:
+    """
+    # 添加一个形状
+    # add_shape(self, autoshape_type_id, left, top, width, height)
+    # 参数分别为：形状类型、左边距、上边距、宽度、高度
+    shape = slide.shapes.add_shape(autoshape_type_id=autoshape_type_id,
+                                   left=unit(left),
+                                   top=unit(top),
+                                   width=unit(width),
+                                   height=unit(height))
+    return shape
+
+
 def insert_table(slide, rows, cols, left, top, width, height, unit=Cm):
     """
     幻灯片中插入一个表格
@@ -258,6 +284,49 @@ def insert_video(slide, video_path, thumbnail_path, left, top, width, height, un
                                        poster_frame_image=thumbnail_path)
 
     return video_obj
+
+
+def insert_chart(slide, left, top, width, height, data, unit=Inches, chart_type=XL_CHART_TYPE.COLUMN_CLUSTERED):
+    """
+    插入图表
+    :param slide: 幻灯片
+    :param left: 左边距
+    :param top: 上边距
+    :param width: 宽度
+    :param height: 高度
+    :param data: 图表数据
+    :param unit: 数据单位，默认为：Inches
+    :param chart_type: 图表类型，默认是：柱状图
+    :return:
+    """
+    chart_result = slide.shapes.add_chart(chart_type=chart_type,
+                                          x=unit(left), y=unit(top),
+                                          cx=unit(width), cy=unit(height),
+                                          chart_data=data)
+    # 返回图表
+    return chart_result.chart
+
+
+def set_chart_title(chart, title_content, font_name=None, font_size=-1, font_color=None, font_bold=False,
+                    font_italic=False):
+    """
+    为图表添加一个标题
+    :param font_italic:
+    :param font_bold:
+    :param chart:
+    :param title_content: 
+    :param font_name: 
+    :param font_size: 
+    :param font_color: 
+    :return: 
+    """
+    # 通过添加一个段落来添加一个标题
+    paragraph = chart.chart_title.text_frame.add_paragraph()
+    paragraph.text = title_content
+
+    # 设置段落样式
+    set_parg_font_style(paragraph, font_name, font_color, font_size, font_bold, font_italic)
+
 
 def set_widget_bg(widget, bg_rgb_color=None):
     """
@@ -389,3 +458,96 @@ def random_str(num):
     """
     result = random.sample('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789', num)
     return ''.join(result)
+
+
+def save_ppt_images(presentation, output_path):
+    """
+     保存ppt中所有图片
+    :param presentation:
+    :param output_path 保存目录
+    :return:
+    """
+
+    print('幻灯片数目:', len(presentation.slides))
+
+    # 遍历所有幻灯片
+    for index_slide, slide in enumerate(presentation.slides):
+        # 遍历所有形状
+        for index_shape, shape in enumerate(slide.shapes):
+            # 形状包含：文字形状、图片、普通形状等
+
+            # 过滤出图片形状
+            if shape.shape_type == MSO_SHAPE_TYPE.PICTURE:
+                # 获取图片二进制字符流
+                image_data = shape.image.blob
+
+                # image/jpeg、image/png等
+                image_type_pre = shape.image.content_type
+
+                # 图片后缀名
+                image_suffix = image_type_pre.split('/')[1]
+
+                # 创建image文件夹保存抽出图片
+                if not os.path.exists(output_path):
+                    os.makedirs(output_path)
+
+                # 图片保存路径
+                output_image_path = output_path + random_str(10) + "." + image_suffix
+
+                print(output_image_path)
+
+                # 写入到新的文件中
+                with open(output_image_path, 'wb') as file:
+                    file.write(image_data)
+
+
+def get_shape_content(shape, shape_type=0):
+    """
+    获取存在文本框（has_text_frame为True）的形状Shape的文本内容
+    :param shape_type:形状类型
+    :param shape:形状
+    :return:
+    """
+    # 文本框：shape.text_frame
+    # 文本框中的段落：shape.text_frame.paragraphs
+    # 文本框中的文本内容：shape.text_frame.text
+    # 文字块Run：shape.text_frame.paragraphs[0].runs
+    if shape_type == 0:  # 全部文本
+        return shape.text_frame.text
+    elif shape_type == 1:  # 按照段落去获取内容
+        return [paragraph.text for paragraph in shape.text_frame.paragraphs]
+    else:  # 通过文字块，去获取全部内容
+        # 形状中所有段落
+        paragraphs = shape.text_frame.paragraphs
+        # 文字块内容列表
+        results = []
+        for paragraph in paragraphs:
+            runs = paragraph.runs
+            for run in runs:
+                results.append(run.text)
+
+        return results
+
+
+def read_ppt_content(presentation):
+    """
+    读取PPT中所有的内容
+    :param presentation:
+    :return:
+    """
+    # 所有内容
+    results = []
+
+    # 遍历所有幻灯片，获取文本框中的值
+    for slide in presentation.slides:
+        for shape in slide.shapes:
+            # 判断形状是否包含文本框
+            if shape.has_text_frame:
+                content = get_shape_content(shape)
+                if content:
+                    results.append(content)
+
+    return results
+
+
+
