@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7193f224-9f84-4551-9cbd-ed0ea7e1b060" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_/mock_patch_object_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_/mock_patch_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_/product_impl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest_mock_/product_impl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest_mock_/test_pytest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittest_mock/product_impl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittest_mock/test_mock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittest_mock/test_mock_pro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittest_mock/test_mock_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/builder/builder2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/builder/builder_norm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/builder/builder_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/builder/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/factory/factory_abstract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/factory/factory_abstract_car.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/factory/factory_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/factory/factory_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/factory/fruit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/factory/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/observer/observer_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/observer/pro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/observer/readmd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/proxy/proxy_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/proxy/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/singleton/readmd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/singleton/singleton_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/singleton/with_decorator_and_param.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/singleton/with_decorator_and_param_thread_0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python设计模式/singleton/with_decorator_and_param_thread_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../测试/自动化测试平台/知了课堂/API自动化平台源码/zl_test_client" beforeDir="false" afterPath="$PROJECT_DIR$/../../../测试/自动化测试平台/知了课堂/API自动化平台源码/zl_test_client" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_product_status_by_id</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/unittest_mock/main.py" />
+        <option value="$PROJECT_DIR$/unittest_mock/dev_code.py" />
+        <option value="$PROJECT_DIR$/unittest_mock/test_mock.py" />
+        <option value="$PROJECT_DIR$/unittest_mock/dev_code1.py" />
+        <option value="$PROJECT_DIR$/pay.py" />
+        <option value="$PROJECT_DIR$/unittest_mock/test.py" />
+        <option value="$PROJECT_DIR$/temp.py" />
+        <option value="$PROJECT_DIR$/unittest_mock/test_mock_pro.py" />
+        <option value="$PROJECT_DIR$/pytest_mock_/A.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/a.py" />
+        <option value="$PROJECT_DIR$/order_impl.py" />
+        <option value="$PROJECT_DIR$/product_impl.py" />
+        <option value="$PROJECT_DIR$/pytest_mock_/b.py" />
+        <option value="$PROJECT_DIR$/pytest_mock_/a.py" />
+        <option value="$PROJECT_DIR$/pytest_mock_/test_a.py" />
+        <option value="$PROJECT_DIR$/mock_/mock_test.py" />
+        <option value="$PROJECT_DIR$/mock_/mock_patch_object_test.py" />
+        <option value="$PROJECT_DIR$/unittest_mock/test_mock_product.py" />
+        <option value="$PROJECT_DIR$/mock_/mock_patch_test.py" />
+        <option value="$PROJECT_DIR$/pytest_mock_/test_pytest.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mock_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock_python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mock_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock_python" type="462c0819:PsiDirectoryNode" />
+              <item name="pytest_mock_" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/unittest_mock" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/unittest_mock" />
+      <recent name="$PROJECT_DIR$/mock_" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pytest_mock_" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest in test_mock_product.py">
+    <configuration name="pytest for test_mock_product.TestProduct" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="mock_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest_mock" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mock_product.TestProduct&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_mock_product.TestProduct.test_fail" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="mock_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest_mock" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mock_product.TestProduct.test_fail&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_mock_product.TestProduct.test_success" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="mock_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest_mock" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mock_product.TestProduct.test_success&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in mock_patch_object_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="mock_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mock_" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mock_/mock_patch_object_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_mock_product.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="mock_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest_mock" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/unittest_mock/test_mock_product.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest in test_mock_product.py" />
+        <item itemvalue="Python tests.pytest for test_mock_product.TestProduct.test_fail" />
+        <item itemvalue="Python tests.pytest for test_mock_product.TestProduct" />
+        <item itemvalue="Python tests.pytest for test_mock_product.TestProduct.test_success" />
+        <item itemvalue="Python tests.pytest in mock_patch_object_test.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7193f224-9f84-4551-9cbd-ed0ea7e1b060" name="Default Changelist" comment="" />
+      <created>1610710913925</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610710913925</updated>
+      <workItem from="1610710915154" duration="3077000" />
+      <workItem from="1610714456521" duration="11857000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_for_mock_patch_test_test_succuse - 2021.01.16 at 13h 00m 49s.xml">
+      <configuration name="pytest for mock_patch_test.test_succuse" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_mock_patch_test_test_succuse - 2021.01.16 at 13h 01m 03s.xml">
+      <configuration name="pytest for mock_patch_test.test_succuse" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_mock_patch_test_test_succuse - 2021.01.16 at 13h 01m 42s.xml">
+      <configuration name="pytest for mock_patch_test.test_succuse" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mock_patch_test_py - 2021.01.16 at 13h 02m 27s.xml">
+      <configuration name="pytest in mock_patch_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mock_patch_test_py - 2021.01.16 at 13h 03m 14s.xml">
+      <configuration name="pytest in mock_patch_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mock_patch_test_py - 2021.01.16 at 13h 03m 38s.xml">
+      <configuration name="pytest in mock_patch_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mock_product_TestProduct_test_success - 2021.01.16 at 15h 57m 10s.xml">
+      <configuration name="pytest for test_mock_product.TestProduct.test_success" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mock_product_TestProduct - 2021.01.16 at 15h 57m 49s.xml">
+      <configuration name="pytest for test_mock_product.TestProduct" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mock_product_TestProduct_test_fail - 2021.01.16 at 15h 58m 19s.xml">
+      <configuration name="pytest for test_mock_product.TestProduct.test_fail" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_mock_product_py - 2021.01.16 at 15h 58m 29s.xml">
+      <configuration name="pytest in test_mock_product.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14934000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24603175" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39081633" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5214286" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24603175" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45816326" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5214286" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_a_test_A_output.coverage" NAME="pytest for test_a.test_A_output Coverage Results" MODIFIED="1610771577692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest_mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_mock_TestZhifuStatues_test_01.coverage" NAME="pytest for test_mock.TestZhifuStatues.test_01 Coverage Results" MODIFIED="1610711652608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_pytest_test_func.coverage" NAME="pytest for test_pytest.test_func Coverage Results" MODIFIED="1610768272209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest_mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_in_test_mock_product_py.coverage" NAME="pytest in test_mock_product.py Coverage Results" MODIFIED="1610783908473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$Unittests_in_test_mock_py.coverage" NAME="Unittests in test_mock.py Coverage Results" MODIFIED="1610713682226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_mock_patch_test_test_succuse.coverage" NAME="pytest for mock_patch_test.test_succuse Coverage Results" MODIFIED="1610773300928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_mock_product_TestProduct_test_fail.coverage" NAME="pytest for test_mock_product.TestProduct.test_fail Coverage Results" MODIFIED="1610783898216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$a.coverage" NAME="a Coverage Results" MODIFIED="1610766880951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest_mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_in_test_mock_py.coverage" NAME="pytest in test_mock.py Coverage Results" MODIFIED="1610711753373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$Unittests_for_test_TestZhifuStatues.coverage" NAME="Unittests for test.TestZhifuStatues Coverage Results" MODIFIED="1610713542594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$Unittests_for_test_TestZhifuStatues_test_002.coverage" NAME="Unittests for test.TestZhifuStatues.test_002 Coverage Results" MODIFIED="1610713567067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_mock_test_test_fail.coverage" NAME="pytest for mock_test.test_fail Coverage Results" MODIFIED="1610772876432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_mock_product_TestProduct.coverage" NAME="pytest for test_mock_product.TestProduct Coverage Results" MODIFIED="1610783868220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$Unittests_in_test_mock_pro_py.coverage" NAME="Unittests in test_mock_pro.py Coverage Results" MODIFIED="1610713319702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_pytest_test_A_output.coverage" NAME="pytest for test_pytest.test_A_output Coverage Results" MODIFIED="1610768343502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest_mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_in_test_pytest_py.coverage" NAME="pytest in test_pytest.py Coverage Results" MODIFIED="1610770058459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest_mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$Unittests_for_test_mock_pro_TestZhifuStatues_test_002.coverage" NAME="Unittests for test_mock_pro.TestZhifuStatues.test_002 Coverage Results" MODIFIED="1610713747419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$Unittests_for_test_TestZhifuStatues_test_001.coverage" NAME="Unittests for test.TestZhifuStatues.test_001 Coverage Results" MODIFIED="1610713547228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_mock_test_test_bar.coverage" NAME="pytest for mock_test.test_bar Coverage Results" MODIFIED="1610772800944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_mock_TestZhifuStatues_test_02.coverage" NAME="pytest for test_mock.TestZhifuStatues.test_02 Coverage Results" MODIFIED="1610711708943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_mock_product_TestProduct_test_success.coverage" NAME="pytest for test_mock_product.TestProduct.test_success Coverage Results" MODIFIED="1610783829289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_in_mock_patch_test_py.coverage" NAME="pytest in mock_patch_test.py Coverage Results" MODIFIED="1610773417664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$pytest_for_test_pytest_test_buy_product_success.coverage" NAME="pytest for test_pytest.test_buy_product_success Coverage Results" MODIFIED="1610770063563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest_mock_" />
+    <SUITE FILE_PATH="coverage/mock_python$Unittests_for_test_mock_pro_TestZhifuStatues_test_001.coverage" NAME="Unittests for test_mock_pro.TestZhifuStatues.test_001 Coverage Results" MODIFIED="1610713704483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittest_mock" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/unittest_mock/dev_code1.py" />
+    <entry file="file://$PROJECT_DIR$/pay.py" />
+    <entry file="file://$PROJECT_DIR$/unittest_mock/test.py" />
+    <entry file="file://$PROJECT_DIR$/a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest_mock_/product_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pytest_mock/plugin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="396" column="13" lean-forward="true" selection-start-line="396" selection-start-column="13" selection-end-line="396" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest_mock_/test_a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest_mock_/b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest_mock_/a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittest_mock/test_mock_pro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="e#323#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittest_mock/product_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/mock/mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3629">
+          <caret line="1654" column="9" selection-start-line="1654" selection-start-column="4" selection-end-line="1654" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_/product_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3/mock.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_/mock_patch_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#261#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_/mock_patch_object_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="15" selection-start-line="15" selection-end-line="32" selection-end-column="52" />
+          <folding>
+            <element signature="e#266#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/mock.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittest_mock/test_mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="e#256#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="1027" column="10" selection-start-line="1027" selection-start-column="6" selection-end-line="1027" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittest_mock/test_mock_product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" selection-start-line="15" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="e#276#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest_mock_/test_pytest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding>
+            <element signature="e#268#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
