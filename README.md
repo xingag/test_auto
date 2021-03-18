@@ -12,6 +12,8 @@
 
 * [RoboBrowser 使用](./RoboBrowser)
 
+* [MechanicalSoup使用](./MechanicalSoup)
+
   
 
 ## BDD
